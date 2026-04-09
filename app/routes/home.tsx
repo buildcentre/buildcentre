@@ -1,13 +1,17 @@
+import Header from "~/components/Header";
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+
+import Swiper from "~/components/Swiper";
 
 export function meta({}: Route.MetaArgs) {
-  return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
-  ];
+  return [{ title: "Home" }];
 }
 
 export default function Home() {
-  return <Welcome />;
+  return (
+    <>
+      <Header />
+      <Swiper />
+    </>
+  );
 }
