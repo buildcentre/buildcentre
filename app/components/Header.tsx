@@ -28,7 +28,7 @@ export default function Header() {
       <Link to="">
         <img src={BCLOGO} alt="Build Centre logo" className="w-40" />
       </Link>
-      <nav className="h-20 flex items-center gap-x-5 justify-center">
+      <nav className="h-20 flex items-center gap-x-10 justify-center pe-40">
         <div className="flex flex-col group">
           <Link
             to="/"
@@ -61,13 +61,13 @@ export default function Header() {
                     Overview
                   </Link>
                   <Link to="" className="p-2 hover:text-blue-400 transition">
+                    Why Choose Us
+                  </Link>
+                  <Link to="" className="p-2 hover:text-blue-400 transition">
                     Leadership
                   </Link>
                   <Link to="" className="p-2 hover:text-blue-400 transition">
-                    Our Presence
-                  </Link>
-                  <Link to="" className="p-2 hover:text-blue-400 transition">
-                    Why Choose Us
+                    Our Presence Across East Africa
                   </Link>
                 </div>
               </div>
@@ -92,30 +92,35 @@ export default function Header() {
               "
               >
                 <p className="">
-                  We are the leading provider of building materials. Unrivaled
-                  in size, scale and capability, we are a critical partner for
-                  some of the world’s most iconic structures. From neighborhood
-                  streets to highways, above ground and below, our essential
-                  materials form the very foundations of the communities where
-                  we live and work.
+                  Delivering end-to-end building material solutions across East
+                  Africa, from sourcing to project execution support.
                 </p>
               </div>
               <div className="border-l-2 my-10 border-gray-300 px-10 items-center flex">
                 <div className="grid grid-cols-2 gap-2">
                   <Link to="" className="p-2 hover:text-blue-400 transition">
-                    Overview
+                    Product Supply
                   </Link>
                   <Link to="" className="p-2 hover:text-blue-400 transition">
-                    Our History
+                    Bathroom Solutions
                   </Link>
                   <Link to="" className="p-2 hover:text-blue-400 transition">
-                    Our Purpose
+                    Tiles & Surface Solutions
                   </Link>
                   <Link to="" className="p-2 hover:text-blue-400 transition">
-                    Innovation at Build Centre
+                    Gypsum & Ceiling Systems
                   </Link>
                   <Link to="" className="p-2 hover:text-blue-400 transition">
-                    Our Leadership
+                    Construction Chemicals
+                  </Link>
+                  <Link to="" className="p-2 hover:text-blue-400 transition">
+                    Project Sourcing & Procurement
+                  </Link>
+                  <Link to="" className="p-2 hover:text-blue-400 transition">
+                    BOQ & Technical Support
+                  </Link>
+                  <Link to="" className="p-2 hover:text-blue-400 transition">
+                    Logistics & Delivery
                   </Link>
                 </div>
               </div>
@@ -129,54 +134,6 @@ export default function Header() {
           >
             <span>Our Brands</span>
           </Link>
-        </div>
-        <div className="flex flex-col group">
-          <Link
-            to="/"
-            className={`${linkTextClass} group-hover/header:text-black flex items-center mt-8 pb-5 hover:text-blue-400`}
-          >
-            <span>Our Presence Across East Africa</span>
-            <RxCaretDown
-              className="group-hover:rotate-180 transition-all"
-              size={20}
-            />
-          </Link>
-          <div className="absolute h-100 w-screen top-full left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none group-hover:pointer-events-auto bg-white text-black shadow-lg">
-            <div className=" absolute p-4 grid grid-cols-2 h-full">
-              <div
-                className="flex items-center justify-center h-full w-full px-10
-              "
-              >
-                <p className="">
-                  We are the leading provider of building materials. Unrivaled
-                  in size, scale and capability, we are a critical partner for
-                  some of the world’s most iconic structures. From neighborhood
-                  streets to highways, above ground and below, our essential
-                  materials form the very foundations of the communities where
-                  we live and work.
-                </p>
-              </div>
-              <div className="border-l-2 my-10 border-gray-300 px-10 items-center flex">
-                <div className="grid grid-cols-2 gap-2">
-                  <Link to="" className="p-2 hover:text-blue-400 transition">
-                    Overview
-                  </Link>
-                  <Link to="" className="p-2 hover:text-blue-400 transition">
-                    Our History
-                  </Link>
-                  <Link to="" className="p-2 hover:text-blue-400 transition">
-                    Our Purpose
-                  </Link>
-                  <Link to="" className="p-2 hover:text-blue-400 transition">
-                    Innovation at Build Centre
-                  </Link>
-                  <Link to="" className="p-2 hover:text-blue-400 transition">
-                    Our Leadership
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
         <div className="flex flex-col group">
           <Link
