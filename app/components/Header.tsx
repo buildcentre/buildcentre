@@ -56,15 +56,15 @@ export default function Header() {
                 </p>
               </div>
               <div className="border-l-2 my-10 border-gray-300 px-10 items-center flex">
-                <div className="grid grid-cols-1 gap-2">
+                <div className="grid grid-cols-2 gap-2">
                   <Link to="" className="p-2 hover:text-blue-400 transition">
                     Overview
                   </Link>
                   <Link to="" className="p-2 hover:text-blue-400 transition">
-                    Our Presence
+                    Leadership
                   </Link>
                   <Link to="" className="p-2 hover:text-blue-400 transition">
-                    Our Leadership
+                    Our Presence
                   </Link>
                   <Link to="" className="p-2 hover:text-blue-400 transition">
                     Why Choose Us
@@ -128,43 +128,7 @@ export default function Header() {
             className={`${linkTextClass} group-hover/header:text-black flex items-center mt-8 pb-5 hover:text-blue-400`}
           >
             <span>Our Brands</span>
-            <RxCaretDown
-              className="group-hover:rotate-180 transition-all"
-              size={20}
-            />
           </Link>
-          <div className="absolute h-100 w-screen top-full left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none group-hover:pointer-events-auto bg-white text-black shadow-lg">
-            <div className=" absolute p-4 grid grid-cols-2 h-full">
-              <div
-                className="flex items-center justify-center h-full w-full px-10
-              "
-              >
-                <p className="">
-                  Strategic partnerships with globally recognized manufacturers
-                  trusted by leading developers.
-                </p>
-              </div>
-              <div className="border-l-2 my-10 border-gray-300 px-10 items-center flex">
-                <div className="grid grid-cols-2 gap-2">
-                  <Link to="" className="p-2 hover:text-blue-400 transition">
-                    Overview
-                  </Link>
-                  <Link to="" className="p-2 hover:text-blue-400 transition">
-                    Our History
-                  </Link>
-                  <Link to="" className="p-2 hover:text-blue-400 transition">
-                    Our Purpose
-                  </Link>
-                  <Link to="" className="p-2 hover:text-blue-400 transition">
-                    Innovation at Build Centre
-                  </Link>
-                  <Link to="" className="p-2 hover:text-blue-400 transition">
-                    Our Leadership
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
         <div className="flex flex-col group">
           <Link
@@ -213,6 +177,14 @@ export default function Header() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="flex flex-col group">
+          <Link
+            to="/blog"
+            className={`${linkTextClass} group-hover/header:text-black flex items-center mt-8 pb-5 hover:text-blue-400`}
+          >
+            <span>Blog</span>
+          </Link>
         </div>
         <div className="flex flex-col group">
           <Link

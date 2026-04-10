@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation, Pagination, EffectFade } from "swiper/modules";
+import { Autoplay, Pagination, EffectFade } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import "~/app.css";
 
@@ -13,10 +14,13 @@ export default function App() {
     <>
       <Swiper
         className="mySwiper h-screen w-screen top-0 left-0"
-        modules={[Autoplay, EffectFade]}
+        modules={[Autoplay, EffectFade, Pagination]}
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
         }}
         effect="fade"
         fadeEffect={{
@@ -31,13 +35,12 @@ export default function App() {
             alt=""
             className="h-full w-full absolute -z-10"
           />
-          <div className="h-full w-full flex justify-center px-40 text-white bg-black/30 flex-col gap-4">
+          <div className="h-full w-full flex justify-center px-40 text-white bg-black/30 flex-col gap-4 slide-in">
             <h1 className="text-6xl uppercase font-bold">
               Luxury Bathroom & Sanitary Solutions
             </h1>
             <p className="text-2xl pe-150">
               From sanitaryware to fittings, we supply fully integrated systems
-              from Kohler, Hansgrohe, and Duravit.
             </p>
             <Link
               to=""
@@ -53,7 +56,7 @@ export default function App() {
             alt=""
             className="h-full w-full absolute -z-10"
           />
-          <div className="h-full w-full flex justify-center px-40 text-white bg-black/30 flex-col gap-4">
+          <div className="h-full w-full flex justify-center px-40 text-white bg-black/30 flex-col gap-4 slide-in">
             <h1 className="text-6xl uppercase font-bold">
               Premium Tiles & Surface Solutions
             </h1>
